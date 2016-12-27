@@ -1,23 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Anonymous+Pro:400,700&subset=latin-ext')
 
-@import url('https://fonts.googleapis.com/css?family=Anonymous+Pro:400,400i,700,700i|Josefin+Sans:100,100i,300,300i,400,400i,600,600i,700,700i|Julius+Sans+One|Jura:300,400,500,600|Space+Mono:400,400i,700,700i|Ubuntu:300,300i,400,400i,500,500i,700,700i&subset=latin-ext')
-
-// font-family: 'Ubuntu', sans-serif;
-// font-family: 'Space Mono', monospace;
-// font-family: 'Josefin Sans', sans-serif;
-// font-family: 'Julius Sans One', sans-serif;
-// font-family: 'Jura', sans-serif;
-// font-family: 'Anonymous Pro', monospace;
-
-
-$background-color-dark : #34495e
+$background-color-dark : #34495e 
 $base-font-color: #ecf0f1
 $dotColor: #5cbdaa
+$font-weight-for-h1: 700
 
 body
 	background-color: $background-color-dark
 	color: $base-font-color
 	font-family: 'Anonymous Pro', monospace
-
 
 
 nav
@@ -32,7 +23,9 @@ nav
 .navbar-default
 	.container-fluid
 		.navbar-nav
+
 			>li
+			
 				>a
 					color: $base-font-color
 					margin-top: 3.5rem 
@@ -40,7 +33,7 @@ nav
 					// padding: 10px 12px
 					margin-left: 1.7rem
 					margin-right: 1.9rem
-					font-size: 1.8rem
+					font-size: 2.2rem
 					text-transform: uppercase
 					font-weight: 400
 
@@ -61,22 +54,26 @@ nav
 
 
 
+
 .jumbotron
 	height: 93vh
 	background-color: $background-color-dark
 	position: relative
 
 	#intro
-		position: absolute
-		top: 30%
-		left: 19%
+		
 
 		h1
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%)
 			
-			margin-top: 20vh
+			// margin-top: 20vh
 
 			small
-				color: #5cbdaa
+				color: #B5EFE4
+				// color: #5cbdaa
 
 
 
@@ -85,44 +82,159 @@ nav
 
 	h1
 		text-align: center
-		margin: 25px auto
+		margin: 20px auto 50px auto
 		padding: 40px 0 0 20px
 		letter-spacing: 1px
-
-	hr
-		&:before, &:after
-		background-color: $dotColor
-		width: 120px
-		height: 2px
-		border-top: none
-		margin: 1px auto
-
-	
+		font-weight: $font-weight-for-h1
+		font-size: 44px
 
 	div 
 		text-align: center
-		margin: 10px auto
+		margin: 30px auto
 
 		h3
 			letter-spacing: 1px
 			padding: 10px 50px 20px 50px
 			margin: 0 50px 50px 25px
-			font-size: 18px
+			font-size: 24px
 
 		div
-			>img
-				margin: 0 auto
-				
-				&:hover
-					opacity: 0.7
 			>a
-				text-decoration: none
-				text-decoration-style: none
+				>img
+					margin: 0 auto
+					filter: brightness(110%)
+					-webkit-box-shadow: 8px 8px 4px 1px #2c3e50
+					-moz-box-shadow: 8px 8px 4px 1px #2c3e50
+					box-shadow: 8px 8px 4px 1px #2c3e50
+					transition: all 0.5s ease
+					border-radius: 3px
+					// max-width: 800px
+
+
+					// &:hover
+					// 	transform: brightness(120%)
+			>h3
+
+				font-size: 24px
+				margin-top: 5px
+
+				>a
+					text-decoration: none
+					text-decoration-style: none
+					color: $base-font-color
+					font-size: 32px
+					&:hover
+						color: $dotColor
+
+#technologies
+
+
+	h1
+		text-align: center
+		margin: 25px auto
+		padding: 40px 0 0 20px
+		letter-spacing: 1px
+		font-weight: $font-weight-for-h1
+		font-size: 44px
+
+
+	p
+		font-size: 22px
+		letter-spacing: 1px
+		margin: 30px auto
+		text-align: center
+
+
+	>.row
+		>div
+			margin: 65px auto
+			text-align: center
+
+			>i
+
+				font-size: 90px
+				transition: all 0.5s ease
+				&:hover
+					color: $dotColor
+					
+
+			>.svg
+
+
+				max-width: 90px
+				max-height: 90px
+				margin: 0 auto
+
+			
+				g#vendor-codewars
+					fill: #fff
+					transition: all 0.5s ease
+
+					&:hover
+						fill: $dotColor
+#about 
+	h1
+		text-align: center
+		margin: 20px auto 70px auto
+		padding: 40px 0 0 20px
+		letter-spacing: 1px
+		font-weight: $font-weight-for-h1
+		font-size: 44px
+
+	div
+		>img
+			max-height: 400px
+			max-width: 300px
+			border-radius: 15px
+			-webkit-box-shadow: 7px 8px 50px -1px rgba(92,189,170,0.3)
+			-moz-box-shadow: 7px 8px 50px -1px rgba(92,189,170,0.3)
+			box-shadow: 7px 8px 50px -1px rgba(92,189,170,0.3)
+
+		h3
+			text-align: center
+			margin-bottom: 20px
+			font-size: 36px
+
+		ul 
+			list-style-type: square
+			font-size: 16px
+
+			li
+				&:hover
+					font-size: 18px
+
+
+
+#contact
+	h1
+		text-align: center
+		margin: 20px auto 20px auto
+		padding: 10px 0 0 10px
+		letter-spacing: 1px
+		font-weight: $font-weight-for-h1
+		font-size: 44px
+
+	>div
+		margin: 65px auto
+		text-align: center
+
+		>i
+
+			font-size: 90px
+			transition: all 0.5s ease
+			color: $dotColor
+			&:hover
 				color: $base-font-color
 
-				>h3
-					font-size: 20px
-					margin-top: 5px
+		p 
+			font-size: 20px
 
-					>i
+
+
+footer
+	height: 50px
+	text-align: center
+	font-size: 14px
+	// background-color: #B5EFE4
+	// color: $background-color-dark
 
