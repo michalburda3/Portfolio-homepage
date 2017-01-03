@@ -36,12 +36,6 @@ $(document).ready(function() {
     });
 });
 
-// //smooth scroll - zmienić jakoś.
-
-// $(document).ready(function(){
-
-    // $(window).scroll(() => ($(this).scrollTop() > 600) ? $('.fixed-menu').fadeIn('slow') : $('.fixed-menu').fadeOut('slow'));
-// });
 
 $(function() {
   $('a[href*="#"]:not([href="#"])').click(function() {
@@ -56,4 +50,9 @@ $(function() {
       }
     }
   });
+});
+
+
+$(document).ready(function(){
+    $('#work>div>div>h3>a').tooltip({delay: 10}); 
 });

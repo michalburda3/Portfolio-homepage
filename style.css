@@ -87,9 +87,11 @@ nav {
   letter-spacing: 1px;
   font-weight: 700;
   font-size: 44px; }
+  #technologies h1 small {
+    font-size: 20px; }
 
 #technologies p {
-  font-size: 22px;
+  font-size: 28px;
   letter-spacing: 1px;
   margin: 30px auto;
   text-align: center; }
@@ -102,15 +104,24 @@ nav {
     transition: all 0.5s ease; }
     #technologies > .row > div > i:hover {
       color: #5cbdaa; }
-  #technologies > .row > div > .svg {
-    max-width: 90px;
-    max-height: 90px;
-    margin: 0 auto; }
-    #technologies > .row > div > .svg g#vendor-codewars {
-      fill: #fff;
+  #technologies > .row > div > a {
+    text-decoration: none;
+    text-decoration-style: none;
+    color: #ecf0f1; }
+    #technologies > .row > div > a > i {
+      font-size: 90px;
       transition: all 0.5s ease; }
-      #technologies > .row > div > .svg g#vendor-codewars:hover {
-        fill: #5cbdaa; }
+      #technologies > .row > div > a > i:hover {
+        color: #5cbdaa; }
+    #technologies > .row > div > a > .svg {
+      max-width: 90px;
+      max-height: 90px;
+      margin: 0 auto; }
+      #technologies > .row > div > a > .svg g#vendor-codewars {
+        fill: #ffffff;
+        transition: all 0.5s ease; }
+        #technologies > .row > div > a > .svg g#vendor-codewars:hover {
+          fill: #5cbdaa; }
 
 #about h1 {
   text-align: center;
@@ -136,8 +147,6 @@ nav {
 #about div ul {
   list-style-type: square;
   font-size: 16px; }
-  #about div ul li:hover {
-    font-size: 18px; }
 
 #contact h1 {
   text-align: center;
@@ -155,6 +164,12 @@ nav {
     transition: all 0.5s ease;
     color: #5cbdaa; }
     #contact > div > i:hover {
+      color: #ecf0f1; }
+  #contact > div > a {
+    font-size: 90px;
+    transition: all 0.5s ease;
+    color: #5cbdaa; }
+    #contact > div > a:hover {
       color: #ecf0f1; }
   #contact > div p {
     font-size: 20px; }

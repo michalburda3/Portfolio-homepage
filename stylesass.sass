@@ -126,6 +126,8 @@ nav
 					&:hover
 						color: $dotColor
 
+
+
 #technologies
 
 
@@ -137,9 +139,12 @@ nav
 		font-weight: $font-weight-for-h1
 		font-size: 44px
 
+		small
+			font-size: 20px
+
 
 	p
-		font-size: 22px
+		font-size: 28px
 		letter-spacing: 1px
 		margin: 30px auto
 		text-align: center
@@ -152,26 +157,40 @@ nav
 
 			>i
 
+
 				font-size: 90px
 				transition: all 0.5s ease
 				&:hover
 					color: $dotColor
 					
+			>a
+				text-decoration: none
+				text-decoration-style: none
+				color: $base-font-color
 
-			>.svg
+				>i
 
-
-				max-width: 90px
-				max-height: 90px
-				margin: 0 auto
-
-			
-				g#vendor-codewars
-					fill: #fff
+					font-size: 90px
 					transition: all 0.5s ease
-
 					&:hover
-						fill: $dotColor
+						color: $dotColor
+
+				>.svg
+
+
+					max-width: 90px
+					max-height: 90px
+					margin: 0 auto
+
+				
+					g#vendor-codewars
+						fill: #ffffff
+						transition: all 0.5s ease
+
+						&:hover
+							fill: $dotColor
+
+
 #about 
 	h1
 		text-align: center
@@ -199,9 +218,6 @@ nav
 			list-style-type: square
 			font-size: 16px
 
-			li
-				&:hover
-					font-size: 18px
 
 
 
@@ -226,6 +242,15 @@ nav
 			&:hover
 				color: $base-font-color
 
+		>a
+			>i
+
+			font-size: 90px
+			transition: all 0.5s ease
+			color: $dotColor
+			&:hover
+				color: $base-font-color
+
 		p 
 			font-size: 20px
 
@@ -237,4 +262,5 @@ footer
 	font-size: 14px
 	// background-color: #B5EFE4
 	// color: $background-color-dark
+
 
