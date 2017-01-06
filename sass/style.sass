@@ -21,6 +21,14 @@ nav
 	border: none
 
 .navbar-default
+	.navbar-toggle
+		border: none
+		background-color: inherit
+		font-size: 25px
+		&:hover,
+		&:focus
+			background-color: inherit
+
 	.container-fluid
 		.navbar-nav
 
@@ -141,6 +149,7 @@ nav
 
 		small
 			font-size: 20px
+			color: $base-font-color
 
 
 	p
@@ -162,6 +171,18 @@ nav
 				transition: all 0.5s ease
 				&:hover
 					color: $dotColor
+
+			h5
+				text-align: center
+				font-size: 16px
+				margin-bottom: 10px
+
+			ul
+				list-style-type: square
+
+				li
+					text-align: left
+
 					
 			>a
 				text-decoration: none
@@ -262,5 +283,200 @@ footer
 	font-size: 14px
 	// background-color: #B5EFE4
 	// color: $background-color-dark
+
+
+
+
+
+// MEDIA
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+
+
+
+
+@media screen and (max-width: 767px)
+
+	.navbar-default
+		.container-fluid
+			.navbar-nav
+
+				>li
+				
+					>a
+						color: $base-font-color
+						margin: 10px auto
+						font-size: 2rem
+						text-transform: uppercase
+						font-weight: 400
+						text-align: center
+
+						&:after
+							content: ''
+							display: block
+							margin: auto
+							height: 2px
+							width: 0px
+							background: transparent
+							transition: width .5s ease, background-color .5s ease
+
+						&:hover:after
+							width: 100%
+							background: $background-color-dark
+
+	// .jumbotron
+	// 	height: 50vh
+
+	// #particles
+	// 	display: hidden
+	// 	// display: none
+	// 	.pg-canvas
+	// 		// height: 40px
+	// 		// margin-top: 20vh
+	// 		overflow: hidden
+	// 		// margin-bottom: 100vh
+	// 		// display: hidden
+
+
+// 	#intro
+		
+
+// 		h1
+// 			position: absolute
+// 			top: 50%
+// 			left: 50%
+// 			transform: translate(-50%, -50%)
+			
+// 			// margin-top: 20vh
+
+// 			small
+// 				color: #B5EFE4
+// 				// color: #5cbdaa
+
+
+@media screen and (max-width: 767px)
+
+	#work
+
+		h1
+
+			margin: 10px auto 30px auto
+			padding: 40px 0 0 20px
+			font-size: 33px
+
+		div 
+			margin: 15px auto
+
+			h3
+
+				font-size: 24px
+
+			div
+				>h3
+
+					font-size: 16px
+
+					>a
+
+						color: $base-font-color
+						font-size: 16px
+						&:hover
+							color: $base-font-color
+
+
+
+	#technologies
+
+
+		h1
+			margin: 10px auto 30px auto
+			padding: 40px 0 0 20px
+			font-size: 33px
+
+			small
+				font-size: 16px
+
+		p
+			font-size: 20px
+
+		>.row
+			>div
+				margin: 35px auto
+
+				>i
+					font-size: 80px
+					&:hover
+						color: $base-font-color
+				// ul
+				// 	list-style-type: none
+				// 	// margin: -100px
+
+				// 	li
+				// 	margin-left: -30px
+				>a
+					color: $base-font-color
+
+					>i
+						font-size: 60px
+						&:hover
+							color: $base-font-color
+
+					>.svg
+						max-width: 60px
+						max-height: 60px
+
+						g#vendor-codewars
+							&:hover
+								fill: $base-font-color
+
+
+	#about 
+		h1
+			margin: 10px auto 30px auto
+			padding: 40px 0 0 20px
+			font-size: 33px
+
+		div
+			>img
+				max-height: 300px
+				max-width: 200px
+				margin: 0 auto
+
+			h3
+				text-align: center
+				margin-bottom: 20px
+				font-size: 36px
+
+			ul 
+				list-style-type: square
+				font-size: 16px
+
+	#contact
+		h1
+			margin: 10px auto 30px auto
+			padding: 20px 0 0 20px
+			font-size: 33px
+
+		>div
+			margin: 35px auto
+			>a
+				>i
+
+				font-size: 60px
+
+				color: $dotColor
+				&:hover
+					color: $dotColor
+
+			p 
+				font-size: 14px
+
 
 

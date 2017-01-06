@@ -12,6 +12,13 @@ nav {
   background-color: #34495e;
   border: none; }
 
+.navbar-default .navbar-toggle {
+  border: none;
+  background-color: inherit;
+  font-size: 25px; }
+  .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    background-color: inherit; }
+
 .navbar-default .container-fluid .navbar-nav > li > a {
   color: #ecf0f1;
   margin-top: 3.5rem;
@@ -88,7 +95,8 @@ nav {
   font-weight: 700;
   font-size: 44px; }
   #technologies h1 small {
-    font-size: 20px; }
+    font-size: 20px;
+    color: #ecf0f1; }
 
 #technologies p {
   font-size: 28px;
@@ -104,6 +112,14 @@ nav {
     transition: all 0.5s ease; }
     #technologies > .row > div > i:hover {
       color: #5cbdaa; }
+  #technologies > .row > div h5 {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 10px; }
+  #technologies > .row > div ul {
+    list-style-type: square; }
+    #technologies > .row > div ul li {
+      text-align: left; }
   #technologies > .row > div > a {
     text-decoration: none;
     text-decoration-style: none;
@@ -178,5 +194,95 @@ footer {
   height: 50px;
   text-align: center;
   font-size: 14px; }
+
+@media screen and (max-width: 767px) {
+  .navbar-default .container-fluid .navbar-nav > li > a {
+    color: #ecf0f1;
+    margin: 10px auto;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    text-align: center; }
+    .navbar-default .container-fluid .navbar-nav > li > a:after {
+      content: '';
+      display: block;
+      margin: auto;
+      height: 2px;
+      width: 0px;
+      background: transparent;
+      transition: width .5s ease, background-color .5s ease; }
+    .navbar-default .container-fluid .navbar-nav > li > a:hover:after {
+      width: 100%;
+      background: #34495e; } }
+
+@media screen and (max-width: 767px) {
+  #work h1 {
+    margin: 10px auto 30px auto;
+    padding: 40px 0 0 20px;
+    font-size: 33px; }
+  #work div {
+    margin: 15px auto; }
+    #work div h3 {
+      font-size: 24px; }
+    #work div div > h3 {
+      font-size: 16px; }
+      #work div div > h3 > a {
+        color: #ecf0f1;
+        font-size: 16px; }
+        #work div div > h3 > a:hover {
+          color: #ecf0f1; }
+  #technologies h1 {
+    margin: 10px auto 30px auto;
+    padding: 40px 0 0 20px;
+    font-size: 33px; }
+    #technologies h1 small {
+      font-size: 16px; }
+  #technologies p {
+    font-size: 20px; }
+  #technologies > .row > div {
+    margin: 35px auto; }
+    #technologies > .row > div > i {
+      font-size: 80px; }
+      #technologies > .row > div > i:hover {
+        color: #ecf0f1; }
+    #technologies > .row > div > a {
+      color: #ecf0f1; }
+      #technologies > .row > div > a > i {
+        font-size: 60px; }
+        #technologies > .row > div > a > i:hover {
+          color: #ecf0f1; }
+      #technologies > .row > div > a > .svg {
+        max-width: 60px;
+        max-height: 60px; }
+        #technologies > .row > div > a > .svg g#vendor-codewars:hover {
+          fill: #ecf0f1; }
+  #about h1 {
+    margin: 10px auto 30px auto;
+    padding: 40px 0 0 20px;
+    font-size: 33px; }
+  #about div > img {
+    max-height: 300px;
+    max-width: 200px;
+    margin: 0 auto; }
+  #about div h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 36px; }
+  #about div ul {
+    list-style-type: square;
+    font-size: 16px; }
+  #contact h1 {
+    margin: 10px auto 30px auto;
+    padding: 20px 0 0 20px;
+    font-size: 33px; }
+  #contact > div {
+    margin: 35px auto; }
+    #contact > div > a {
+      font-size: 60px;
+      color: #5cbdaa; }
+      #contact > div > a:hover {
+        color: #5cbdaa; }
+    #contact > div p {
+      font-size: 14px; } }
 
 /*# sourceMappingURL=style.css.map */
