@@ -1,10 +1,11 @@
 
-// particle.js
+// particleground.js
 
 document.addEventListener('DOMContentLoaded', function () {
   particleground(document.getElementById('particles'), {
     dotColor: '#5cbdaa',
-    lineColor: '#5cbdaa'
+    lineColor: '#5cbdaa',
+    // density: 100;
   });
   var intro = document.getElementById('intro');
   intro.style.marginTop = - intro.offsetHeight / 2 + 'px';
@@ -54,5 +55,5 @@ $(function() {
 
 
 $(document).ready(function(){
-    $('#work>div>div>h3>a').tooltip({delay: 10}); 
+    $('#work>div>div>h3>a').tooltip({delay: 10});
 });

@@ -21,6 +21,20 @@ nav
 	border: none
 
 .navbar-default
+
+	>div
+		margin: 0 auto
+		padding: 20px
+		text-align: center
+		a
+			>i
+				// padding: 20px
+				font-size: 30px
+				transition: all 0.5s ease
+				color: $dotColor
+				&:hover
+					color: $base-font-color
+
 	.navbar-toggle
 		border: none
 		background-color: inherit
@@ -104,6 +118,7 @@ nav
 			font-size: 24px
 
 		div
+
 			>a
 				>img
 					margin: 0 auto
@@ -142,7 +157,7 @@ nav
 
 		small
 			font-size: 20px
-			color: $base-font-color
+			color: $dotColor
 
 
 	p
@@ -150,6 +165,11 @@ nav
 		letter-spacing: 1px
 		margin: 30px auto
 		text-align: center
+
+	h3
+		@extend p 
+		color: $dotColor
+
 
 
 	>.row
@@ -227,6 +247,7 @@ nav
 			text-align: center
 			margin-bottom: 20px
 			font-size: 36px
+			color: $dotColor
 
 		ul 
 			list-style-type: square
@@ -238,8 +259,8 @@ nav
 #contact
 	h1
 		text-align: center
-		margin: 20px auto 20px auto
-		padding: 10px 0 0 10px
+		margin: 5px auto 10px auto
+		padding: 5px 0 0 10px
 		letter-spacing: 1px
 		font-weight: $font-weight-for-h1
 		font-size: 44px
@@ -271,9 +292,11 @@ nav
 
 
 footer
-	height: 50px
+
+	height: 20px
 	text-align: center
-	font-size: 14px
+	font-size: 16px
+
 
 
 // MEDIA
@@ -353,7 +376,8 @@ footer
 			margin: 15px auto
 
 			h3
-
+				padding: 10px 
+				margin: 10px
 				font-size: 24px
 
 			div
@@ -379,7 +403,9 @@ footer
 			font-size: 33px
 
 			small
+
 				font-size: 16px
+				
 
 		p
 			font-size: 20px
@@ -433,12 +459,12 @@ footer
 
 	#contact
 		h1
-			margin: 10px auto 30px auto
-			padding: 20px 0 0 20px
+			margin: 10px
+			padding: 10px
 			font-size: 33px
 
 		>div
-			margin: 35px auto
+			margin: 20px auto
 			>a
 				>i
 
@@ -453,3 +479,95 @@ footer
 
 
 
+@media screen and (min-width: 320px) and (max-width: 450px)
+	
+	#work
+
+		h1
+
+			margin: 10px auto 30px auto
+			padding: 40px 0 0 20px
+			font-size: 33px
+
+		div 
+			margin: 15px auto
+
+			h3
+				margin: 5px 
+				padding: 5px
+				font-size: 22px
+
+			div
+				>h3
+
+					font-size: 14px
+
+					>a
+
+						color: $base-font-color
+						font-size: 14px
+						&:hover
+							color: $base-font-color
+	
+
+	
+	#technologies
+
+
+		h1
+			margin: 10px auto 30px auto
+			padding: 40px 0 0 20px
+			font-size: 25px
+
+			small
+
+				font-size: 14px
+				
+
+		p
+			font-size: 14px
+
+		>.row
+			>div
+
+				>i
+					font-size: 70px
+
+				>a
+					>i
+						font-size: 50px
+					>.svg
+						max-width: 50px
+						max-height: 50px
+
+
+	#about 
+		h1
+			font-size: 25px
+		div
+			h3
+				text-align: center
+				margin-bottom: 20px
+				font-size: 22px
+
+			ul 
+				list-style-type: square
+				font-size: 12px
+
+
+	#contact
+		h1
+			margin: 5px
+			padding: 5px
+			font-size: 25px
+
+		>div
+
+			margin: 5px auto
+
+			>a
+				>i
+
+				font-size: 50px
+			p 
+				display: none
