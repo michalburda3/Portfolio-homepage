@@ -17,6 +17,7 @@ nav {
   padding: 20px;
   text-align: center; }
   .navbar-default > div a > i {
+    padding-top: 30px;
     font-size: 30px;
     transition: all 0.5s ease;
     color: #5cbdaa; }
@@ -74,11 +75,10 @@ nav {
 #work div {
   text-align: center;
   margin: 30px auto; }
-  #work div h3 {
+  #work div h4 {
     letter-spacing: 1px;
-    padding: 10px 50px 20px 50px;
-    margin: 0 50px 50px 25px;
-    font-size: 24px; }
+    padding: 10px 40px 10px 40px;
+    margin: 0 30px 40px 20px; }
   #work div div > a > img {
     margin: 0 auto;
     filter: brightness(110%);
@@ -87,15 +87,15 @@ nav {
     box-shadow: 8px 8px 4px 1px #2c3e50;
     transition: all 0.5s ease;
     border-radius: 3px; }
-  #work div div > h3 {
+  #work div div > h4 {
     font-size: 24px;
     margin-top: 5px; }
-    #work div div > h3 > a {
+    #work div div > h4 > a {
       text-decoration: none;
       text-decoration-style: none;
       color: #ecf0f1;
       font-size: 32px; }
-      #work div div > h3 > a:hover {
+      #work div div > h4 > a:hover {
         color: #5cbdaa; }
 
 #technologies h1 {
@@ -156,7 +156,7 @@ nav {
 #about h1 {
   text-align: center;
   margin: 20px auto 70px auto;
-  padding: 40px 0 0 20px;
+  padding: 40px 0 20px 0;
   letter-spacing: 1px;
   font-weight: 700;
   font-size: 44px; }
@@ -182,13 +182,13 @@ nav {
 #contact h1 {
   text-align: center;
   margin: 5px auto 10px auto;
-  padding: 5px 0 0 10px;
+  padding: 50px 0 0 10px;
   letter-spacing: 1px;
   font-weight: 700;
   font-size: 44px; }
 
 #contact > div {
-  margin: 65px auto;
+  margin: 45px auto;
   text-align: center; }
   #contact > div > i {
     font-size: 90px;
@@ -211,6 +211,10 @@ footer {
   font-size: 16px; }
 
 @media screen and (max-width: 767px) {
+  .navbar-default > div a > i {
+    padding-top: 0px; }
+    .navbar-default > div a > i:hover {
+      color: #5cbdaa; }
   .navbar-default .container-fluid .navbar-nav > li > a {
     color: #ecf0f1;
     margin: 10px auto;
@@ -235,18 +239,18 @@ footer {
     margin: 10px auto 30px auto;
     padding: 40px 0 0 20px;
     font-size: 33px; }
-  #work div {
+  #work .row {
     margin: 15px auto; }
-    #work div h3 {
+    #work .row h4 {
       padding: 10px;
       margin: 10px;
-      font-size: 24px; }
-    #work div div > h3 {
       font-size: 16px; }
-      #work div div > h3 > a {
+    #work .row > div > h4 {
+      font-size: 16px; }
+      #work .row > div > h4 > a {
         color: #ecf0f1;
         font-size: 16px; }
-        #work div div > h3 > a:hover {
+        #work .row > div > h4 > a:hover {
           color: #ecf0f1; }
   #technologies h1 {
     margin: 10px auto 30px auto;
@@ -303,6 +307,10 @@ footer {
       font-size: 14px; } }
 
 @media screen and (min-width: 320px) and (max-width: 450px) {
+  .navbar-default > div a > i {
+    padding-top: 0px; }
+    .navbar-default > div a > i:hover {
+      color: #5cbdaa; }
   .navbar-default #navbar-collapse .navbar-nav > li > a {
     margin: 0 auto;
     font-size: 1.5rem;
@@ -312,7 +320,7 @@ footer {
     padding: 40px 0 0 20px;
     font-size: 33px; }
   #work div {
-    margin: 15px auto; }
+    margin: 10px auto; }
     #work div h3 {
       margin: 5px;
       padding: 5px;
