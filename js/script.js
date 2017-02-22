@@ -54,5 +54,5 @@ $(function() {
 
 
 $(document).ready(function(){
-    $('#work>div>div>h3>a').tooltip({delay: 10});
+    $('#work>div>div>h4>a').tooltip({delay: 10});
 });
